@@ -1,0 +1,1 @@
+compilador utilizado: minGW.
