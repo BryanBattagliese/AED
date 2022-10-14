@@ -17,5 +17,5 @@ int main ()
    
    for(unsigned venta; std::cin >> venta;)       
       total += venta;                           
-      std::cout << total << '\n';                
+      std::cout << "Total de ventas "<< " = " << total << '\n';                
 }
