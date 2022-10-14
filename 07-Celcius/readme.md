@@ -1,4 +1,4 @@
-## TP 07-Funciones y Comparación de Valores en Punto Flotante — Celsius
+## TP 07-Funciones y Comparación de Valores en Punto Flotante — Celsius (OPCIONAL)
 
 * Objetivos: Demostrar el manejo de funciones y valores punto flotante.
 
