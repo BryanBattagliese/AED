@@ -10,17 +10,19 @@
    (VENTA x mes) * --> P --> VENTA´12 (venta'12 = array)
    (VENTA =  N)
 
-   ej- (venta en $, mes)
-       (5,0) : (7,2) : (3,11) --->  $5 en enero; $7 en marzo; $3 en diciembre ...
 */
 
 int main ()
 {
    std::array<unsigned,12> total{0};
    
-   for(unsigned venta, mes; std::cin >> venta >>mes;)
+   std::cout << "Ingrese importe de la venta y mes correspondiente" << '\n';
+
+   for(unsigned venta, mes; std::cin >> venta >> mes;)
       total.at(mes) += venta;
 
+   std::cout << "TOTAL DE VENTAS" << '\n';
+
    for(int i{0}; i<12 ;++i)
-      std::cout << total.at(i) << '\n'; 
+      std::cout << '\n' << " Mes " << i << " = " << total.at(i) << '\n';
 }
