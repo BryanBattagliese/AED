@@ -4,7 +4,7 @@
 
 /* Consigna 4: DIM 3
    Dado los importes, meses, números de los tres vendedores, y
-   números de las cuatro regiones (0, 1, 2, 4), mostrar total de ventas por mes,
+   números de las cuatro regiones (0, 1, 2, 3), mostrar total de ventas por mes,
    vendedor, y región.
 */
 
