@@ -1,10 +1,11 @@
 #include <iostream>
 #include <array>
 #include <string>
+#include <fstream>
 
 /* Consigna 4: DIM 3
    Dado los importes, meses, números de los tres vendedores, y
-   números de las cuatro regiones (0, 1, 2, 3), mostrar total de ventas por mes,
+   números de las cuatro regiones (0, 1, 2, 4), mostrar total de ventas por mes,
    vendedor, y región.
 */
 
@@ -12,11 +13,12 @@
 int main ()
 {
     using std::array;
+    std::fstream file;
     array<array<array<unsigned,12>,3>,4> total{0};
+    
+    file.open("dim3.txt");
 
-    std::cout << "Ingrese importe de la venta, mes, vendedor y region correspondiente" << '\n';
-
-    for(unsigned venta, mes, vendedor, region; std::cin >> venta >> mes >> vendedor >> region;)
+    for(unsigned venta, mes, vendedor, region; file >> venta >> mes >> vendedor >> region;)
         total[region][vendedor][mes] += venta;
         
     std::cout << "TOTAL DE VENTAS" << '\n';
