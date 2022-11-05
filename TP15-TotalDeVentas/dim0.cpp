@@ -1,4 +1,5 @@
 #include <iostream>  
+#include <fstream>
 
 /* Consigna 1: DIM 0
    Dado los importes, mostrar ventas totales.
@@ -13,9 +14,12 @@
 
 int main ()
 {
-   unsigned total {0};                           
+   std::fstream file;
+   unsigned total {0};
+
+   file.open("dim0.txt");
    
-   for(unsigned venta; std::cin >> venta;)       
+   for(unsigned venta; file >> venta;)       
       total += venta;                           
       std::cout << "Total de ventas "<< " = " << total << '\n';                
 }
