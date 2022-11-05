@@ -1,5 +1,6 @@
 #include <iostream>
 #include <array>
+#include <fstream>
 
 /* Consigna 3: DIM 2
    Dado los importes, meses, y números de los tres vendedores
@@ -9,11 +10,12 @@
 int main ()
 {
     using std::array;
+    std::fstream file;
     array<array<unsigned,12>,3> total{0};
 
-    std::cout << "Ingrese importe de la venta, mes y vendedor correspondiente" << '\n';
+    file.open("dim2.txt");
 
-    for(unsigned venta, mes, vendedor; std::cin >> venta >> mes >> vendedor;)
+    for(unsigned venta, mes, vendedor; file >> venta >> mes >> vendedor;)
         total[vendedor][mes] += venta;
         
     std::cout << "TOTAL DE VENTAS" << '\n';
