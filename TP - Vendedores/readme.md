@@ -4,5 +4,5 @@
 - Calcular la mayor venta por mes.
 - Calcular el promedio de venta por mes.
 - Calcular el mejor vendedor por mes.
-- Guardar todas las ventas del vendedor 0 de la region 0 en un 'vector'.
+- Guardar todas las ventas del vendedor 0 de la region 0 en un 'vector'. (FALTA! ACTUALIZAR)
 
