@@ -29,8 +29,8 @@ void mejoresVendedores          (const Cubo &,int,int);
 
 int main ()
 {	 
-    Cubo                        total{};
-    cargarDatos                 (total);
+   	 Cubo                        total{};
+    	  cargarDatos                 (total);
 	  mostrarVentas               (total);
 	  mostrarDatos                (total);
 	  crearTXT                    (total);  
