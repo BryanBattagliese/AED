@@ -53,7 +53,7 @@ void cargarDatos (Cubo &total)
 
 	file2.open("file.bin", ios::in | ios::binary);
 	file2.read(reinterpret_cast<char *>(&total), sizeof(total));
-	filedim.open("dim3.txt");
+	filedim.open("vendedores.txt");
 
     int region{}, vendedor{}, mes{}, importe{};
 	    
